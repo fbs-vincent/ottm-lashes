@@ -122,7 +122,7 @@ td {
 body {
   line-height: 1;
   color: #2b2b2b;
-  font: 14px/24px 'din-regular', Helvetica, sans-serif;
+  font: 16px/24px 'din-regular', Helvetica, sans-serif;
   position: relative;
 }
 
@@ -155,6 +155,131 @@ a {
                     * 2.0 :: Repeatable Patterns
                     * ===================================================================
                     */
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-pink {
+  color: #ff03d1;
+}
+
+.text-dark-pink {
+  color: #ed1456;
+}
+
+.text-blue {
+  color: #095cea;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.bg-pink {
+  background-color: #ff03d1;
+}
+
+.bg-blue {
+  background-color: #095cea;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.din-regular {
+  font-family: 'din-regular';
+}
+
+.din-medium {
+  font-family: 'din-medium';
+}
+
+.din-condensed {
+  font-family: 'din-condensed';
+}
+
+.din-bold {
+  font-family: 'din-bold';
+}
+
+.stroke-pink {
+  -webkit-text-stroke: 1.4px #f15080;
+  -webkit-text-fill-color: transparent;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mx-10 {
+  margin: 0 10px;
+}
+
+.my-10 {
+  margin: 10px 0;
+}
+
+.my-20 {
+  margin: 20px 0;
+}
+
+.py-40 {
+  padding: 40px 0;
+}
+
+.py-60 {
+  padding: 60px 0;
+}
+
+.py-100 {
+  padding: 100px 0;
+}
+
+.py-200 {
+  padding: 200px 0;
+}
 
 /* ===================================================================
                     * 3.0 :: Structure / Grid/ Column
@@ -545,11 +670,11 @@ article:after {
                     * 8.0 :: Mobile CSS
                     * ===================================================================
                     */
-@media screen and (max-width: 1366px) {
+/* @media screen and (max-width: 1366px) {
 }
 
 @media screen and (max-width: 1260px) {
 }
 
 @media screen and (max-width: 1199px) {
-}
+} */

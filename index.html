@@ -68,9 +68,337 @@
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Above the fold css -->
-    <style></style>
+    <style>
+      header {
+        color: #fff;
+        padding: 10px;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 15px;
+      }
+
+      nav ul li:first-child {
+        margin-left: 0;
+      }
+
+      nav ul li:last-child {
+        margin-left: 60px;
+        border: 1px solid #fff;
+        padding: 5px 15px;
+        border-radius: 4px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        font-family: 'din-medium';
+        text-transform: uppercase;
+      }
+
+      nav ul li a span {
+        margin-left: 15px;
+      }
+
+      #mobile-nav {
+        display: none;
+      }
+
+      form {
+        width: 290px;
+        margin: 0 auto;
+      }
+
+      form input {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      form input::placeholder {
+        color: #b2b2b2;
+        font-family: 'din-regular';
+      }
+
+      form input[type='submit'] {
+        background-color: #ed1456;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'din-regular';
+      }
+
+      .offer-wrapper {
+        width: 290px;
+        margin: 0 auto;
+      }
+
+      .naturally-bold-wrapper {
+        padding: 120px 60px;
+        background-color: #fff;
+        border-radius: 4px;
+      }
+
+      @media screen and (max-width: 1089px) {
+        header {
+          padding: 10px 0;
+        }
+
+        #header {
+          display: block !important;
+          font-size: 14px;
+        }
+
+        nav {
+          border-top: 1px solid #fff;
+        }
+
+        nav ul li a {
+          font-size: 14px;
+        }
+
+        #header-logo {
+          justify-content: center;
+          margin-bottom: 10px;
+        }
+
+        #desktop-nav {
+          display: none;
+        }
+
+        #mobile-nav {
+          display: block;
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        nav ul li:last-child {
+          border: none;
+          margin-left: 15px;
+          padding: 0;
+          border-radius: 0;
+        }
+      }
+
+      @media screen and (max-width: 370px) {
+        #header {
+          font-size: 12px;
+        }
+
+        nav ul li a {
+          font-size: 12px;
+        }
+
+        .logo img {
+          width: 180px;
+        }
+
+        nav ul li {
+          margin-left: 10px;
+        }
+
+        nav ul li:last-child {
+          margin-left: 10px;
+        }
+
+        nav ul li a span {
+          margin-left: 10px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to Lashes Training by Vincent</h1>
+    <header class="bg-pink">
+      <div class="container">
+        <div class="row">
+          <div id="header" class="d-flex space-between align-items-center">
+            <div id="header-logo" class="d-flex align-items-center">
+              <div class="logo d-inline-block">
+                <a href="#">
+                  <picture>
+                    <source srcset="./assets/img/logo.webp" type="image/webp" />
+                    <img
+                      id="desktop-logo"
+                      data-src="./assets/img/logo.png"
+                      alt="Amazing Lashes Logo"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div class="location d-inline-block text-transform-uppercase">
+                <p class="d-inline-block din-medium">
+                  <span class="d-inline-block mx-10">|</span>Sandy Utah
+                </p>
+              </div>
+            </div>
+            <nav>
+              <ul id="desktop-nav">
+                <li>
+                  <a href="#">Styles<span>|</span></a>
+                </li>
+                <li>
+                  <a href="#">Reviews<span>|</span></a>
+                </li>
+                <li><a href="#">What To</a></li>
+                <li><a href="#">(714) 581 - 8200</a></li>
+              </ul>
+              <ul id="mobile-nav">
+                <li>
+                  <a href="#">Styles<span>|</span></a>
+                </li>
+                <li>
+                  <a href="#">Reviews<span>|</span></a>
+                </li>
+                <li>
+                  <a href="#">What to expect<span>|</span></a>
+                </li>
+                <li><a href="#">Hours</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="banner">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h1
+              class="din-regular stroke-pink text-transform-uppercase text-center"
+              style="font-size: 72px; margin-top: 60px; letter-spacing: 6px"
+            >
+              Wake Up Beautiful
+            </h1>
+            <p
+              class="din-medium text-left text-dark-pink"
+              style="
+                font-size: 18px;
+                margin-left: 192px;
+                margin-top: 3px;
+                letter-spacing: 1.8px;
+                margin-bottom: 10px;
+              "
+            >
+              Live Mascara-Free with Lash Extensions
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="offer" class="bg-blue py-60 position-relative">
+      <picture>
+        <source srcset="./assets/img/girl-a.webp" type="image/webp" />
+        <img
+          class="position-absolute"
+          data-src="./assets/img/girl-a.png"
+          style="bottom: 0; right: 214px; width: 626px"
+          alt="Lashes Model"
+        />
+      </picture>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="offer-wrapper">
+              <div class="offer-description text-white">
+                <p
+                  class="d-block din-medium text-transform-uppercase text-center"
+                  style="font-size: 20px; letter-spacing: 2px"
+                >
+                  First Set Of Lashes
+                </p>
+                <div class="text-center din-medium">
+                  <p
+                    class="d-inline-block"
+                    style="
+                      font-size: 72px;
+                      line-height: 1.5;
+                      vertical-align: top;
+                    "
+                  >
+                    $
+                  </p>
+                  <p
+                    class="d-inline-block"
+                    style="font-size: 142px; line-height: 1"
+                  >
+                    79
+                  </p>
+                  <p
+                    class="d-inline-block"
+                    style="
+                      font-size: 72px;
+                      line-height: 1.3;
+                      vertical-align: top;
+                    "
+                  >
+                    99
+                  </p>
+                  <p
+                    class="din-regular mb-10"
+                    style="font-size: 14px; letter-spacing: 1.4px"
+                  >
+                    Regular Price
+                    <span style="text-decoration: line-through"> $199</span>
+                    - Limited Time Only
+                  </p>
+                </div>
+              </div>
+              <form action="">
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+                <input type="text" placeholder="Email" />
+                <input type="number" placeholder="Phone" />
+                <input type="submit" value="send my offer" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="naturally-bold" class="bg-pink py-200 position-relative">
+      <picture>
+        <source srcset="./assets/img/girl-b.webp" type="image/webp" />
+        <img
+          class="position-absolute"
+          data-src="./assets/img/girl-b.png"
+          style="bottom: 0; left: 40px; width: 618px; z-index: 999"
+          alt="Lashes Model"
+        />
+      </picture>
+      <div class="container">
+        <div class="row">
+          <div class="naturally-bold-wrapper text-center position-relative">
+            <img
+              class="position-absolute"
+              src="./assets/img/lines_black-a.png"
+              alt="Lashes Line"
+              style="top: -12px; left: 300px"
+            />
+            <div style="margin-left: 300px">
+              <h2
+                class="din-regular text-transform-uppercase text-white stroke-pink"
+                style="font-size: 56px; line-height: 1; letter-spacing: 4px"
+              >
+                Naturally Bold
+              </h2>
+              <p class="din-medium" style="font-size: 24px">
+                Our quality lashes look natural, feel natural,
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Defered lazyload -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"
+      integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
