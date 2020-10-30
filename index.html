@@ -12,6 +12,10 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <!-- Font preload -->
     <link
@@ -393,20 +397,76 @@
         </div>
       </div>
     </div>
-    <div id="lashes-that" class="bg-blue py-200">
+    <div id="lashes-that" class="bg-blue py-100">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <h2
-              class="stroke-white text-transform-uppercase mb-60"
-              style="font-size: 56px; letter-spacing: 4px; line-height: 1"
-            >
-              Lashes That
-            </h2>
-            <p class="text-white" style="font-size: 24px; line-height: 1.4">
-              Our professional stylist will help curate <br />
-              a look that's best suited for your eyes,
-            </p>
+          <div class="d-flex align-items-center">
+            <div class="col-lg-6">
+              <h2
+                class="stroke-white text-transform-uppercase mb-60"
+                style="font-size: 56px; letter-spacing: 4px; line-height: 1"
+              >
+                Lashes That
+              </h2>
+              <p class="text-white" style="font-size: 24px; line-height: 1.4">
+                Our professional stylist will help curate <br />
+                a look that's best suited for your eyes,
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="border-pink-thick position-relative">
+                <img
+                  class="position-absolute"
+                  src="./assets/img/lines_black-a.png"
+                  alt="Lashes Line"
+                  style="top: -24px; left: -82px"
+                />
+                <div class="slick">
+                  <div>
+                    <picture>
+                      <source
+                        srcset="./assets/img/lash-slider.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        data-src="./assets/img/lash-slider.jpg"
+                        alt="Lashes Model"
+                      />
+                    </picture>
+                  </div>
+                  <div>
+                    <picture>
+                      <source
+                        srcset="./assets/img/lash-slider2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        data-src="./assets/img/lash-slider2.jpg"
+                        alt="Lashes Model"
+                      />
+                    </picture>
+                  </div>
+                  <div>
+                    <picture>
+                      <source
+                        srcset="./assets/img/lash-slider3.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        data-src="./assets/img/lash-slider3.jpg"
+                        alt="Lashes Model"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <img
+                  class="position-absolute"
+                  src="./assets/img/lines_black-a.png"
+                  alt="Lashes Line"
+                  style="bottom: -24px; right: -80px"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -482,7 +542,15 @@
       </p>
     </footer>
 
-    <!-- Defered slick slider js cdn -->
+    <!-- Defered slick slider js cdn and jquery -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
@@ -495,5 +563,16 @@
       integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg=="
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.slick').slick({
+          infinite: true,
+          slidesToShow: 1,
+          dots: true,
+          arrows: false,
+        });
+      });
+    </script>
   </body>
 </html>
