@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- title -->
+    <!-- Title -->
     <title>OTTM - Lashes</title>
+
+    <!-- Slick slider css cdn -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
     <!-- Font preload -->
     <link
@@ -64,7 +71,7 @@
       crossorigin
     />
 
-    <!-- main external css -->
+    <!-- Main external css -->
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Above the fold css -->
@@ -134,12 +141,6 @@
       .offer-wrapper {
         width: 290px;
         margin: 0 auto;
-      }
-
-      .naturally-bold-wrapper {
-        padding: 120px 60px;
-        background-color: #fff;
-        border-radius: 4px;
       }
 
       @media screen and (max-width: 1089px) {
@@ -370,12 +371,12 @@
       </picture>
       <div class="container">
         <div class="row">
-          <div class="naturally-bold-wrapper text-center position-relative">
+          <div class="background-white-wrapper text-center position-relative">
             <img
               class="position-absolute"
               src="./assets/img/lines_black-a.png"
               alt="Lashes Line"
-              style="top: -12px; left: 300px"
+              style="top: -12px; left: 344px"
             />
             <div style="margin-left: 300px">
               <h2
@@ -392,6 +393,100 @@
         </div>
       </div>
     </div>
+    <div id="lashes-that" class="bg-blue py-200">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2
+              class="stroke-white text-transform-uppercase mb-60"
+              style="font-size: 56px; letter-spacing: 4px; line-height: 1"
+            >
+              Lashes That
+            </h2>
+            <p class="text-white" style="font-size: 24px; line-height: 1.4">
+              Our professional stylist will help curate <br />
+              a look that's best suited for your eyes,
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="clean-safe-pro" class="bg-pink py-200 position-relative">
+      <picture>
+        <source srcset="./assets/img/girl-c.webp" type="image/webp" />
+        <img
+          class="position-absolute"
+          data-src="./assets/img/girl-c.png"
+          style="bottom: 0; left: 170px; width: 485px; z-index: 999"
+          alt="Lashes Model"
+        />
+      </picture>
+      <div class="container">
+        <div class="row">
+          <div class="background-white-wrapper text-center position-relative">
+            <img
+              class="position-absolute"
+              src="./assets/img/lines_black-a.png"
+              alt="Lashes Line"
+              style="top: -12px; left: 430px"
+            />
+            <div style="margin-left: 300px">
+              <div class="mb-40">
+                <h2
+                  class="din-regular text-transform-uppercase text-white stroke-pink"
+                  style="font-size: 56px; line-height: 1; letter-spacing: 4px"
+                >
+                  Clean, Safe, Pro
+                </h2>
+                <p class="din-medium" style="font-size: 24px">
+                  You're in good hands. All of our lash stylists
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <picture>
+                    <source
+                      srcset="./assets/img/csr-1.webp"
+                      type="image/webp"
+                    />
+                    <img data-src="./assets/img/csr-1.jpg" alt="Lashes Model" />
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <source
+                      srcset="./assets/img/csr-2.webp"
+                      type="image/webp"
+                    />
+                    <img data-src="./assets/img/csr-2.jpg" alt="Lashes Model" />
+                  </picture>
+                </li>
+                <li>
+                  <picture>
+                    <source
+                      srcset="./assets/img/csr-3.webp"
+                      type="image/webp"
+                    />
+                    <img data-src="./assets/img/csr-3.jpg" alt="Lashes Model" />
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-light-blue py-20">
+      <p class="din-regular text-center text-white">
+        Copyright &copy; 2019 Amazing Lash Studio Franchise - Privacy Policy
+      </p>
+    </footer>
+
+    <!-- Defered slick slider js cdn -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <!-- Defered lazyload -->
     <script
