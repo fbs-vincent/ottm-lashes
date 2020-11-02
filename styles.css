@@ -20,30 +20,30 @@
     */
 
 @font-face {
-  font-family: 'din-regular';
-  src: url('./assets/font/din-regular.woff2') format('woff2'),
-    url('./assets/font/din-regular.woff') format('woff');
+  font-family: "din-regular";
+  src: url("./assets/font/din-regular.woff2") format("woff2"),
+    url("./assets/font/din-regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'din-medium';
-  src: url('./assets/font/din-medium.woff2') format('woff2'),
-    url('./assets/font/din-medium.woff') format('woff');
+  font-family: "din-medium";
+  src: url("./assets/font/din-medium.woff2") format("woff2"),
+    url("./assets/font/din-medium.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'din-condensed';
-  src: url('./assets/font/din-condensed.woff2') format('woff2'),
-    url('./assets/font/din-condensed.woff') format('woff');
+  font-family: "din-condensed";
+  src: url("./assets/font/din-condensed.woff2") format("woff2"),
+    url("./assets/font/din-condensed.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'din-bold';
-  src: url('./assets/font/din-bold.woff2') format('woff2'),
-    url('./assets/font/din-bold.woff') format('woff');
+  font-family: "din-bold";
+  src: url("./assets/font/din-bold.woff2") format("woff2"),
+    url("./assets/font/din-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -122,7 +122,7 @@ td {
 body {
   line-height: 1;
   color: #2b2b2b;
-  font: 16px/24px 'din-regular', Helvetica, sans-serif;
+  font: 16px/24px "din-regular", Helvetica, sans-serif;
   position: relative;
   overflow-y: scroll;
 }
@@ -250,19 +250,19 @@ ul li img {
 }
 
 .din-regular {
-  font-family: 'din-regular';
+  font-family: "din-regular";
 }
 
 .din-medium {
-  font-family: 'din-medium';
+  font-family: "din-medium";
 }
 
 .din-condensed {
-  font-family: 'din-condensed';
+  font-family: "din-condensed";
 }
 
 .din-bold {
-  font-family: 'din-bold';
+  font-family: "din-bold";
 }
 
 .stroke-pink {
@@ -717,7 +717,7 @@ ul li img {
 .container-fluid:after,
 .row:before,
 .row:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 .clearfix:after,
@@ -778,7 +778,7 @@ ul li img {
 li:after,
 form:after,
 article:after {
-  content: ' ';
+  content: " ";
   clear: both;
   display: block;
   font-size: 0;
